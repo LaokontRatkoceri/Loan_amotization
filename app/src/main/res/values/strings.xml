@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AmoritizationApp</string>
+    <string name="total">Total:</string>
+    <string name="interest">Interest</string>
+    <string name="months">Months:</string>
+    <string name="calculate">Calculate</string>
+    <string name="period">period</string>
+    <string name="payment">payment</string>
+    <string name="principle">principle</string>
+    <string name="_1">1</string>
+    <string name="_22">22</string>
+    <string name="total1">total1</string>
+    <string name="rate">Rate</string>
+    <string name="Total">Total:</string>
+    <string name="remaining_dept">Remaining Dept</string>
+</resources>

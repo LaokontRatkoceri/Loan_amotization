@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/shumaEditText"
+        android:inputType="numberDecimal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"
+        android:hint="@string/total"
+        />
+
+    <EditText
+        android:id="@+id/interesiEditText"
+        android:inputType="numberDecimal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/shumaEditText"
+        app:layout_constraintStart_toStartOf="@id/shumaEditText"
+        app:layout_constraintEnd_toEndOf="@id/shumaEditText"
+        android:layout_marginTop="10dp"
+        android:hint="@string/interest"
+        />
+
+    <EditText
+        android:id="@+id/kohaEditText"
+        android:inputType="numberDecimal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/months"
+        app:layout_constraintEnd_toEndOf="@id/interesiEditText"
+        app:layout_constraintStart_toStartOf="@id/interesiEditText"
+        app:layout_constraintTop_toBottomOf="@id/interesiEditText"
+        />
+
+    <Button
+        android:id="@+id/logariteButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/kohaEditText"
+        app:layout_constraintStart_toStartOf="@id/interesiEditText"
+        app:layout_constraintEnd_toEndOf="@id/kohaEditText"
+        android:layout_marginTop="10dp"
+        android:text="@string/calculate"
+        />
+
+    <TableLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="40dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="@id/logariteButton"
+        app:layout_constraintStart_toStartOf="@id/logariteButton"
+        app:layout_constraintTop_toBottomOf="@id/logariteButton">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/ColorGreen"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/PeriodTextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/period"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/PaymentTextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/payment"
+                android:textColor="@color/white"
+                 />
+
+            <TextView
+                android:id="@+id/InterestTextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/interest"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/PrincipleTextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/principle"
+                android:textColor="@color/white"
+                 />
+
+            <TextView
+                android:id="@+id/ReminingTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/remaining_dept"
+                android:textColor="@color/white"
+                 />
+        </TableRow>
+
+<!--        <TableRow-->
+<!--            android:id="@+id/DataLinearLayout"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/DataPeriodTextView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center_horizontal"-->
+<!--                android:padding="10sp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="14sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/DataPaymentTextView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center_horizontal"-->
+<!--                android:padding="10sp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="14sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/DataInterestTextView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center_horizontal"-->
+<!--                android:padding="10sp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="14sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/DataPrincipleTextView"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center_horizontal"-->
+<!--                android:padding="10sp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="14sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/RemainingPayment"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center_horizontal"-->
+<!--                android:padding="10sp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="14sp" />-->
+<!--        </TableRow>-->
+    </TableLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/But"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/LinearLayout"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/LinearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/LinearLayout"
+        tools:ignore="NotSibling" />
+
+    <TextView
+        android:id="@+id/TotaliTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/logariteButton"
+        android:layout_marginTop="20dp"
+        android:text="@string/Total"
+        app:layout_constraintStart_toStartOf="@+id/logariteButton"
+        />
+
+    <TextView
+        android:id="@+id/RataTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/logariteButton"
+        app:layout_constraintBottom_toTopOf="@+id/TotaliTextView"
+        android:text="@string/rate"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
