@@ -13,7 +13,7 @@ class AmortizationListAdapter(var list: List<LoanCalculation.AmortizationData>):
         var DataInterestView = view.findViewById<TextView>(R.id.DataInterestView)
         var DataPrincipleView = view.findViewById<TextView>(R.id.DataPrincipleView)
         var RemainingPaymentView = view.findViewById<TextView>(R.id.RemainingPaymentView)
-        //
+        //..
 
     }
 
